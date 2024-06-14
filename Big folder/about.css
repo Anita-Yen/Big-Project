@@ -1,0 +1,91 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.logo{
+    margin: 0;
+    font-size: 20px;
+    font-family: cursive;
+    font-weight: bold;
+    color: white;
+     
+ }
+.navbar{
+    width: 100%;
+    height: 30px;
+    padding-top: 5px;
+    background-color: #4fc2dc7a;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar button{
+    margin-right: 7%;
+}
+a {
+    text-decoration: none;
+}
+button {
+    border: 1px solid none;
+    border-radius: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
+   
+    background: #ff2d75;
+}
+button a{
+    color:#fff ;
+}
+
+body{
+    min-height: 100vh;
+    background: #0c192c;
+
+}
+.main{
+    position: relative;
+    width: 100%;
+    height:100vh ;
+    overflow: hidden;
+}
+.butt{
+    display: inline-flex;
+    padding-right: 30px;
+}
+
+   
+.container{
+    position: relative;
+    display: flex;
+}
+.container span{
+    position: relative;
+    width: 15px;
+    height: 15px;
+    background: #4fc3dc;
+    border-radius: 50px;
+    margin: 0 4px;
+    box-shadow: 0 0 0 10px #4fc3dc44,
+    0 0 50px #4fc3dc,
+    0 0 100px #4ff3dc;
+    animation: balls 15s linear infinite;
+    animation-duration: calc(125s /var(--i)) ;
+}
+.container span:nth-child(even){
+    background:#ff2d75 ;
+    box-shadow: 0 0 0 10px #ff2d7544,
+    0 0 50px #ff2d75 ,
+    0 0 100px#ff2d75 ;
+}
+
+@keyframes balls{
+    0%{
+        transform: translateY(100vh) scale(0);
+    }
+    100%{
+        transform:translateY(-10vh)scale(1)
+    }
+}
